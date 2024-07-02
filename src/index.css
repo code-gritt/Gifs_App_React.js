@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-r from-teal-600 via-blue-600 to-pink-600;
+  }
+  .faded-text {
+    @apply font-bold text-sm text-gray-400;
+  }
+  .divider {
+    @apply w-full h-0.5 my-6 bg-gray-800;
+  }
+}
+
+@-webkit-keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes SHOW-BOX {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.showBox {
+  -webkit-animation: SHOW-BOX 0.7s ease;
+  -moz-animation: SHOW-BOX 0.7s ease;
+  -o-animation: SHOW-BOX 0.7s ease;
+  animation: SHOW-BOX 0.7s ease;
+}
